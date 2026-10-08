@@ -4,7 +4,7 @@ from telegram.ext import Application, MessageHandler, filters, ContextTypes
 from PIL import Image, ImageDraw, ImageFont
 import io
 
-TOKEN = os.getenv("8815726541:AAHtZCPSqMH7tmxgJmatFMowkSVvvT_nVFc")
+TOKEN ="8815726541:AAHtZCPSqMH7tmxgJmatFMowkSVvvT_nVFc"
 
 # --- Photo Editing Function ---
 async def edit_photo(file):
