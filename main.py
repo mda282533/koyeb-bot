@@ -1,4 +1,4 @@
-import os
+hiimport os
 from telegram import Update
 from telegram.ext import Application, MessageHandler, filters, ContextTypes
 from PIL import Image, ImageDraw, ImageFont
@@ -62,7 +62,7 @@ async def handle(update: Update, context: ContextTypes.DEFAULT_TYPE):
             text=reply,
             business_connection_id=biz_id
         )
-
 app = Application.builder().token(TOKEN).build()
-app.add_handler(MessageHandler(filters.ALL, handle))
-print("
+app.add_handler(MessageHandler(filters.ALL, handle_message))
+print("Bot started!")
+app.run_polling()
